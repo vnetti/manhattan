@@ -1,0 +1,30 @@
+// Colors
+$primary: #FFFFFF;
+$secondary: #D5621D;
+$bg-color: #210E09;
+
+// Breakpoints
+$breakpoint1200: 1199.98px;
+$breakpoint992: 991.98px;
+$breakpoint768: 767.98px;
+$breakpoint576: 575.98px;
+$breakpoint320: 319.98px;
+
+// Transitions
+$transition300: 0.3s ease-in-out;
+$transition250: 0.25s ease-in-out;
+$transition100: 0.1s ease-in-out;
+
+// Box shadow
+$box-shadow: 0 2px 4px;
+
+// Animation
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

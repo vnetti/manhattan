@@ -1,0 +1,24 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    font-size: .875em;
+
+    .item > a {
+        color: $primary;
+        transition: color $transition250;
+
+        &:hover {
+            color: $secondary;
+        }
+
+        &:active {
+            color: darken($secondary, 20%)
+        }
+    }
+}

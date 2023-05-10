@@ -1,0 +1,64 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .menu {
+        display: flex;
+        flex-basis: 2.875em;
+
+        .button {
+            flex-basis: 50%;
+            font-family: 'Gotham Pro', sans-serif;
+            font-weight: 700;
+            font-size: .875em;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: rgba($secondary, .05);
+
+            &:disabled {
+                background-color: rgba($secondary, .1);
+            }
+        }
+    }
+
+    .events {
+        background-color: rgba($secondary, .1);
+        border-radius: 0 0 5px 5px;
+        padding: 2.25em;
+        width: 100%;
+        height: 100%;
+
+        gap: 1.625em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        place-content: space-between;
+
+        @media (max-width: $breakpoint992) {
+            grid-auto-rows: 400px;
+        }
+        @media (max-width: $breakpoint768) {
+            grid-auto-rows: 300px;
+        }
+        @media (max-width: $breakpoint576) {
+            grid-auto-rows: 50vw;
+        }
+
+
+        .item {
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+
+
+

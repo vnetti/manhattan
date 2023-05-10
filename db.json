@@ -1,0 +1,166 @@
+{
+  "posters": [
+    {
+      "id": 1,
+      "title": "Рок в манхэттене",
+      "description": "Рыбы, Продам гараж",
+      "price": 200,
+      "date": "2023-07-22T19:00",
+      "preview": "rock_in_the_manhattan"
+    },
+    {
+      "id": 2,
+      "title": "Финальный концерт",
+      "description": "John_alligator",
+      "price": 0,
+      "date": "2023-07-23T18:00",
+      "preview": "final_concert"
+    },
+    {
+      "id": 3,
+      "title": "Fontanka fest",
+      "description": "Майрайски, Бакен, Своя Атмосфера, Эффект Кореша, Маренат",
+      "price": 0,
+      "date": "2023-07-24T19:00",
+      "preview": "fontanka_fest"
+    },
+    {
+      "id": 4,
+      "title": "Рок в манхэттене",
+      "description": "The Grace, Бакен, Кустарные Амбиции, Sirius",
+      "price": 200,
+      "date": "2023-07-17T19:00",
+      "preview": "rock_in_the_manhattan_2"
+    },
+    {
+      "id": 5,
+      "title": "Финальный концерт",
+      "description": "John_alligator",
+      "price": 0,
+      "date": "2023-07-25T18:00",
+      "preview": "final_concert"
+    },
+    {
+      "id": 6,
+      "title": "Рок в манхэттене",
+      "description": "The Grace, Бакен, Кустарные Амбиции, Sirius",
+      "price": 200,
+      "date": "2023-07-30T19:00",
+      "preview": "rock_in_the_manhattan_2"
+    },
+    {
+      "id": 7,
+      "title": "Fontanka fest",
+      "description": "Майрайски, Бакен, Своя Атмосфера, Эффект Кореша, Маренат",
+      "price": 0,
+      "date": "2023-07-26T19:00",
+      "preview": "fontanka_fest"
+    },
+    {
+      "id": 8,
+      "title": "Рок в манхэттене",
+      "description": "The Grace, Бакен, Кустарные Амбиции, Sirius",
+      "price": 200,
+      "date": "2023-07-30T19:00",
+      "preview": "rock_in_the_manhattan_2"
+    },
+    {
+      "id": 9,
+      "title": "Рок в манхэттене",
+      "description": "Рыбы, Продам гараж",
+      "price": 200,
+      "date": "2023-08-25T19:00",
+      "preview": "rock_in_the_manhattan"
+    },
+    {
+      "id": 10,
+      "title": "Финальный концерт",
+      "description": "John_alligator",
+      "price": 0,
+      "date": "2023-08-23T18:00",
+      "preview": "final_concert"
+    },
+    {
+      "id": 11,
+      "title": "Рок в манхэттене",
+      "description": "The Grace, Бакен, Кустарные Амбиции, Sirius",
+      "price": 200,
+      "date": "2023-08-17T19:00",
+      "preview": "rock_in_the_manhattan_2"
+    },
+    {
+      "id": 12,
+      "title": "Финальный концерт",
+      "description": "John_alligator",
+      "price": 0,
+      "date": "2023-08-23T18:00",
+      "preview": "final_concert"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "title": "Amet donec.",
+      "description": "Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.",
+      "weight": 200,
+      "price": 550,
+      "preview": "1"
+    },
+    {
+      "id": 2,
+      "title": "Amet donec.",
+      "description": "Elit imperdiet faucibus euismod tortor risus volutpat molestie morbi sed. Porta ac eu.",
+      "weight": 500,
+      "price": 550,
+      "preview": "2"
+    },
+    {
+      "id": 3,
+      "title": "Amet donec.",
+      "description": "Pharetra morbi purus hendrerit risus vel consequat nunc, sed. Pharetra nulla imperdiet.",
+      "weight": 400,
+      "price": 550,
+      "preview": "3"
+    },
+    {
+      "id": 4,
+      "title": "Amet donec.",
+      "description": "Leo in arcu in gravida vivamus scelerisque non. Euismod nec amet amet egestas nisl iaculis.",
+      "weight": 200,
+      "price": 550,
+      "preview": "4"
+    },
+    {
+      "id": 5,
+      "title": "Amet donec.",
+      "description": "In mauris, elit nisl sed. Nulla accumsan vestibulum sed velit sagittis quis accumsan.",
+      "weight": 300,
+      "price": 550,
+      "preview": "5"
+    },
+    {
+      "id": 6,
+      "title": "Amet donec.",
+      "description": "Duis quisque tristique nulla cursus justo, etiam viverra nulla cras. Consectetur eget augue.",
+      "weight": 100,
+      "price": 550,
+      "preview": "6"
+    },
+    {
+      "id": 7,
+      "title": "Amet donec.",
+      "description": "In cras pharetra aliquet laoreet. Lectus nisi ante felis quam pharetra in maecenas ut felis. ",
+      "weight": 200,
+      "price": 550,
+      "preview": "7"
+    },
+    {
+      "id": 8,
+      "title": "Amet donec.",
+      "description": "Integer dolor et sed tempus non. Adipiscing viverra in viverra quisque pretium. Commodo.",
+      "weight": 300,
+      "price": 550,
+      "preview": "8"
+    }
+  ]
+}

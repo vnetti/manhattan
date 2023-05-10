@@ -1,0 +1,26 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.hero {
+    display: grid;
+    padding: 2.8em 3.75em;
+    height: 540px;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    place-content: end start;
+
+    @media (max-width: $breakpoint576) {
+        padding: 1.4em;
+    }
+
+    .heading {
+        margin-top: 0.75em;
+        line-height: 1.5;
+
+        @media (max-width: $breakpoint320) {
+            font-size: 2em;
+        }
+    }
+}

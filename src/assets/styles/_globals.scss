@@ -1,0 +1,71 @@
+//noinspection CssUnknownTarget
+@import '~@styles/variables';
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+	font-size: 1em;
+
+}
+
+body {
+	background-color: $bg-color;
+	color: $primary;
+	font-family: Stolzl, sans-serif;
+}
+
+.container {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.section {
+	padding-bottom: 8.5em;
+
+	&__title{
+		display: block;
+		max-width: fit-content;
+		padding: .7em 1.2em .6em;
+		font-size: .875em;
+		font-family: "Gotham Pro", sans-serif;
+		font-weight: 700;
+		letter-spacing: .05em;
+		color: $bg-color;
+		text-transform: uppercase;
+		background-color: $primary;
+		border-radius: 5px;
+	}
+	&__heading {
+		font-size: 2.5em;
+		font-family: "Gotham Pro", sans-serif;
+		letter-spacing: .05em;
+		color: $primary;
+		text-transform: uppercase;
+	}
+}
+
+.offset-r-1 {
+	margin-right: 8.33333333%;
+}
+
+@media (min-width: 576px) {
+	.offset-sm-r-1 {
+		margin-right: 8.33333333%;
+	}
+}
+@media (min-width: 768px) {
+	.offset-md-r-1 {
+		margin-right: 8.33333333%;
+	}
+}

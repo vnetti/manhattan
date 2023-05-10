@@ -1,0 +1,54 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.section {
+    padding: 0 0 6em;
+
+    .contacts {
+        padding: 3.125em;
+        background-color: rgba($secondary, 10%);
+        border: 2px solid $secondary;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 2.1875em 0;
+
+        .separation hr {
+            margin: 1em 0;
+            opacity: .5;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25em 0;
+
+            .heading {
+                font-size: 1.125em;
+                font-family: "Gotham Pro", sans-serif;
+                font-weight: 700;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+                color: $primary;
+            }
+            *:not(.heading) {
+                font-size: .875em;
+            }
+            a {
+                color: lighten($secondary, 40);
+                transition: color $transition250;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    .map {
+        border: 2px solid #D5621D;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        min-height: 460px;
+    }
+}

@@ -1,0 +1,118 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.item {
+    display: grid;
+    grid-template-columns: 23.5% repeat(9, 1fr);
+    gap: .625em 1.5em;
+    max-width: 39%;
+
+    grid-template-areas:
+        'preview title  title  title  title title title price price price'
+        'preview weight weight .      .     .     .     .     .     .    '
+        'preview desc   desc   desc   desc  desc  desc  desc  desc  desc '
+    ;
+
+    @media (max-width: $breakpoint992) and (min-width: 768px) {
+        //column-gap: .75em;
+        max-width: none;
+        grid-template-areas:
+            'preview title  title  title  title  title title weight weight weight'
+            'preview desc   desc   desc   desc   desc  desc  desc  desc  desc '
+            'preview desc   desc   desc   desc   desc  desc  desc  desc  desc '
+            'price   desc   desc   desc   desc   desc  desc  desc  desc  desc '
+        ;
+    }
+}
+
+.preview {
+    grid-area: preview;
+
+    background-size: cover;
+    background-position: center;
+    max-height: 110px;
+    max-width: 110px;
+    position: relative;
+
+    > div {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color $transition250;
+        > svg {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity $transition250, visibility $transition250;
+        }
+    }
+    &:hover {
+        > div {
+            background-color: rgba($bg-color, .5);
+            > svg {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.title {
+    grid-area: title;
+    align-self: center;
+
+    > a {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 1.125em;
+        font-weight: 700;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: $primary;
+        transition: color $transition250;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+.weight {
+    grid-area: weight;
+
+    font-size: .875em;
+    color: $secondary;
+}
+
+.description {
+    grid-area: desc;
+
+    font-size: .875em;
+    color: $primary;
+}
+
+.price {
+    grid-area: price;
+
+    width: 6em;
+    height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $secondary;
+    border-radius: 5px;
+
+    font-family: "Gotham Pro", sans-serif;
+    font-size: .875em;
+    font-weight: 700;
+    letter-spacing: .05em;
+
+    @media (max-width: $breakpoint992) {
+        width: auto;
+        height: auto;
+        padding: .4em 0;
+    }
+}

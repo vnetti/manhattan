@@ -1,0 +1,14 @@
+/* Import bootstrap styles */
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* Import reset.css */
+@import 'reset.css';
+
+/* Import fonts */
+@import 'fonts';
+
+/* Import variables */
+@import 'variables';
+
+/* Import global styles */
+@import 'globals';
