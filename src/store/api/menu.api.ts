@@ -11,8 +11,11 @@ export const menuApi = createApi({
 	endpoints: build => ({
 		getMenu: build.query<IMenu[], void>({
 			query: () => '/menu'
+		}),
+		getMenuByLimit: build.query<IMenu[], {limit: number, page: number}>({
+			query: ({limit, page = 1}) => `/menu?_limit=${limit}&_page=${page}`
 		})
 	})
 });
 
-export const { useGetMenuQuery } = menuApi;
+export const { useGetMenuByLimitQuery } = menuApi;

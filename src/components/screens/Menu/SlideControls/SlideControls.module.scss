@@ -1,0 +1,43 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.button {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: $secondary;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    font-size: 2em;
+    color: $primary;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color $transition250, opacity $transition300;
+
+    &:first-of-type {
+        left: 0;
+    }
+    &:last-of-type {
+        right: 0;
+    }
+
+    &:hover:not(:disabled) {
+        background-color: darken($secondary, 10);
+    }
+    &:active:not(:disabled) {
+        background-color: darken($secondary, 20);
+    }
+
+    &[disabled] {
+        opacity: .1;
+    }
+
+    @media (max-width: $breakpoint768) {
+        display: none;
+    }
+}

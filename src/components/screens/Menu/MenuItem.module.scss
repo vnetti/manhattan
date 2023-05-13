@@ -8,9 +8,9 @@
     max-width: 39%;
 
     grid-template-areas:
-        'preview title  title  title  title title title price price price'
-        'preview weight weight .      .     .     .     .     .     .    '
-        'preview desc   desc   desc   desc  desc  desc  desc  desc  desc '
+        'preview title  title  title  title  title title price price price'
+        'preview weight weight weight weight .     .     .     .     .    '
+        'preview desc   desc   desc   desc   desc  desc  desc  desc  desc '
     ;
 
     @media (max-width: $breakpoint992) and (min-width: 768px) {
@@ -22,6 +22,11 @@
             'preview desc   desc   desc   desc   desc  desc  desc  desc  desc '
             'price   desc   desc   desc   desc   desc  desc  desc  desc  desc '
         ;
+    }
+
+    @media (max-width: $breakpoint768) {
+        flex: 0 0 auto;
+        min-width: 100%;
     }
 }
 

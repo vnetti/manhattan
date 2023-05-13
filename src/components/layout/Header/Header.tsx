@@ -40,7 +40,7 @@ const Header: FC<HeaderProps> = ({}) => {
 						_class={cn('d-lg-none')}
 						onClick={setIsOpenMenuFn}
 						isOpen={isOpenMenu}
-						id={'main-menu'}
+						// id={'main-menu'}
 					/>
 					<ModalWindow isOpen={isOpenMenu}>
 						<Menu/>

@@ -15,7 +15,7 @@ interface MenuItemProps {
 
 const MenuItem: FC<MenuItemProps> = ({ item, index }) => {
 	return (
-		<li className={cn(classes.item, `col col-md-5 col-sm-12 ${index % 2 === 0 ? 'offset-md-1' : 'offset-md-r-1'}`)}>
+		<li className={cn(classes.item, 'col col-md-5', index % 2 === 0 ? 'offset-md-1' : 'offset-md-r-1')}>
 			<Link
 				className={classes.preview}
 				to={`/menu/${item.id}`}
