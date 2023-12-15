@@ -1,0 +1,40 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.item {
+    background-color: rgba($secondary, .1);
+    border-radius: 5px;
+    font-size: 1.125em;
+    height: fit-content;
+
+    h3 {
+        text-transform: uppercase;
+        padding: 1.2em 2.5em;
+
+        cursor: pointer;
+    }
+
+    ul {
+
+        list-style: disc inside;
+        display: flex;
+        flex-direction: column;
+        gap: 1em 0;
+        overflow: hidden;
+        transition: height $transition300;
+    }
+
+    &.active {
+        background-color: $secondary;
+
+        ul {
+
+            padding: 1.2em 2.5em;
+        }
+    }
+}
+
+.subItem {
+    font-size: .77em;
+
+}

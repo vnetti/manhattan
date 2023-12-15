@@ -1,0 +1,43 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.menu {
+    gap: 3.5em 0;
+    justify-content: space-between;
+}
+
+.slideWrapper {
+    position: relative;
+    margin-bottom: 6em;
+}
+
+.menuLink {
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: block;
+        padding: 1em 2em;
+        border-radius: 5px;
+        background-color: $secondary;
+        border: 2px solid $secondary;
+
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 1.125em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: $primary;
+
+        transition: background-color $transition250, color $transition250;
+
+        &:hover {
+            background-color: darken($secondary, 15%);
+        }
+
+        &:active {
+            background-color: transparent;
+            color: $secondary;
+        }
+    }
+}

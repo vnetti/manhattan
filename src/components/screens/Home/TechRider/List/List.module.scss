@@ -1,0 +1,8 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}

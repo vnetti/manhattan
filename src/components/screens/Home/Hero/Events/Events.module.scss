@@ -17,8 +17,15 @@
             font-size: .875em;
             letter-spacing: .05em;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: $primary;
             background-color: rgba($secondary, .05);
+            border-radius: 5px 5px 0 0;
+            transition: color $transition250, background-color $transition250;
+
+            &:hover:not(:disabled) {
+                background-color: rgba($secondary, .06);
+                color: darken($primary, 20%);
+            }
 
             &:disabled {
                 background-color: rgba($secondary, .1);

@@ -9,24 +9,11 @@
     }
 
     .book {
-        display: block;
-        margin-left: auto;
-        padding: 1em 2em;
-        border: 2px solid $secondary;
-        border-radius: 5px;
-        font-size: inherit;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        color: $primary;
-        transition: background-color $transition250;
+        display: flex;
+        justify-content: flex-end;
 
-
-        &:hover {
-            background-color: $secondary;
-        }
-        &:active {
-            background-color: darken($secondary, 20%);
+        @media (max-width: $breakpoint992) {
+            display: none;
         }
     }
-
 }

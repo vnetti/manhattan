@@ -3,10 +3,11 @@ import { FC, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '~@assets/images/manhattan-logo.png';
+import ModalWindow from '~@components/ModalWindow';
 import Menu from '~@components/layout/Header/Menu';
+import ActionButton from '~@components/ui/buttons/ActionButton';
 import Burger from '~@ui/buttons/Burger';
 import classes from './Header.module.scss';
-import ModalWindow from "~@components/ModalWindow";
 
 interface HeaderProps {}
 
@@ -35,7 +36,12 @@ const Header: FC<HeaderProps> = ({}) => {
 					<Menu />
 				</Col>
 				<Col>
-					<button className={cn(classes.book, 'd-none d-lg-block')}>Бронировать</button>
+					<div className={cn(classes.book)}>
+						<ActionButton
+							title={'Бронировать'}
+							onClick={() => {}}
+						/>
+					</div>
 					<Burger
 						_class={cn('d-lg-none')}
 						onClick={setIsOpenMenuFn}
@@ -43,7 +49,7 @@ const Header: FC<HeaderProps> = ({}) => {
 						// id={'main-menu'}
 					/>
 					<ModalWindow isOpen={isOpenMenu}>
-						<Menu/>
+						<Menu />
 					</ModalWindow>
 				</Col>
 			</Row>

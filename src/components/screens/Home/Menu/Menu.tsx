@@ -1,11 +1,13 @@
 import cn from 'classnames';
 import { FC, useEffect, useState } from 'react';
-import { MenuItem } from '~@screens/Menu';
-import MenuPlaceholder from '~@screens/Menu/Menu.placeholder.tsx';
-import SlideControls from '~@screens/Menu/SlideControls';
+import { MenuItem } from '~@screens/Home/Menu';
+import MenuPlaceholder from '~@screens/Home/Menu/Menu.placeholder.tsx';
+import SlideControls from '~@screens/Home/Menu/SlideControls';
 import { useGetMenuByLimitQuery } from '~@store/api/menu.api.ts';
 import SectionHeading from '~@ui/SectionHeading';
 import classes from './Menu.module.scss';
+import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 
 interface MenuProps {}
 
@@ -57,6 +59,11 @@ const Menu: FC<MenuProps> = ({}) => {
 					disable={slide}
 				/>
 			</div>
+			<Row>
+				<Col className={classes.menuLink}>
+					<Link to={'/menu'}>Все меню</Link>
+				</Col>
+			</Row>
 		</section>
 	);
 };

@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import { FC } from 'react';
 import { Placeholder } from 'react-bootstrap';
-import classes from '~@screens/Menu/MenuItem.module.scss';
+import classes from '~@screens/Home/Menu/MenuItem.module.scss';
 
 const MenuItemPlaceholder: FC<{ index: number }> = ({ index }) => {
 	return (

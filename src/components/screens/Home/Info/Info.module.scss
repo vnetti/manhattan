@@ -1,0 +1,28 @@
+/*Import variables */
+@import "~@styles/variables";
+
+.column {
+
+    padding: 0 1.2em;
+
+    &Content {
+        margin-bottom: 2.125em;
+
+        p {
+            font-size: .875em;
+            text-align: center;
+            margin-top: 1em;
+            line-height: 1.5;
+            color: $primary;
+        }
+    }
+    
+    div:last-child {
+        display: flex;
+        justify-content: center;
+    } 
+}
+
+.image {
+    max-width: 100%;
+}

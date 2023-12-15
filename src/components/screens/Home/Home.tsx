@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import Hero from '~@screens/Home/Hero';
-import Menu from "~@screens/Menu";
+import Menu from "~@screens/Home/Menu";
+import Info from "~@screens/Home/Info";
+import TechRider from "~@screens/Home/TechRider";
 
 interface HomeProps {}
 
@@ -9,6 +11,8 @@ const Home: FC<HomeProps> = ({}) => {
 		<>
 			<Hero />
 			<Menu/>
+			<Info/>
+			<TechRider/>
 		</>
 	)
 };
